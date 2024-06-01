@@ -7,11 +7,21 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageCapa"
+        android:layout_width="507dp"
+        android:layout_height="340dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/capa" />
+
+    <ImageView
+        android:id="@+id/imageLancamentos1"
         android:layout_width="97dp"
         android:layout_height="51dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageLancamento2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="@id/linhaGuiaEsquerda"
@@ -38,7 +48,7 @@
         android:backgroundTint="@android:color/transparent"
         android:drawableTop="@drawable/ic_adicionar_24"
         android:padding="0dp"
-        android:text="ASSISTIR"
+        android:text="MINHA LISTA"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="@+id/button"
         app:layout_constraintEnd_toStartOf="@+id/button"
@@ -195,25 +205,25 @@
         tools:layout_editor_absoluteX="64dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageLancamento2"
         android:layout_width="97dp"
         android:layout_height="51dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintBottom_toBottomOf="@+id/imageLancamentos1"
+        app:layout_constraintEnd_toStartOf="@+id/imageLancamentos3"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageLancamentos1"
+        app:layout_constraintTop_toTopOf="@+id/imageLancamentos1"
         app:srcCompat="@drawable/f2" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageLancamentos3"
         android:layout_width="97dp"
         android:layout_height="51dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintBottom_toBottomOf="@+id/imageLancamento2"
         app:layout_constraintEnd_toEndOf="@id/linhaGuiaDireita"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageLancamento2"
+        app:layout_constraintTop_toTopOf="@+id/imageLancamento2"
         app:srcCompat="@drawable/f3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
